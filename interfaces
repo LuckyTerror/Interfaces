@@ -1,0 +1,43 @@
+package com.pp2;
+
+public interface Animal {
+	public void move ();
+	public void eat ();
+
+}
+
+-----------------------------------------------------------------------------------------------
+
+package com.pp2;
+
+public class Dog implements Animal {
+
+	public void move() {
+		System.out.println("The dog is moving... ");
+		
+	}
+
+	public void eat() {
+		System.out.println("The dog is eating... ");
+		
+	}
+	
+
+}
+
+---------------------------------------------------------------------------------------------------
+
+package com.pp2;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		Dog dog = new Dog();
+		dog.move();
+		dog.eat();
+
+	}
+
+}
+
